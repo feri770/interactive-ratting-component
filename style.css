@@ -1,0 +1,227 @@
+
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+
+  :root {
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Dark-Blue-Lighter: hsl(214, 20%, 23%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+  }
+
+  @font-face {
+    font-family: overpass;
+    src: url(/font/Overpass-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: overpass;
+    src: url(/font/Overpass-Bold.ttf);
+    font-weight: bold;
+  }
+
+
+  
+
+  body{
+      background-color: var(--Very-Dark-Blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+
+
+  .star-img{
+    background-color: var( --Dark-Blue-Lighter);
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    
+  }
+
+  .star-img img{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+
+  .card{
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 27vw;
+    height: 55vh;
+    border-radius: 12px;
+    justify-content: space-between;
+
+  }
+
+
+  h1{
+    color: var(--White);
+    font-family: overpass;
+  }
+
+  p{
+    color: var(--Medium-Grey);
+    size: 1.07rem;
+  }
+
+
+  .rate-btn-container{
+    display: flex;
+    justify-content: space-between;
+    font-family: overpass;
+
+  }
+
+
+  .rate-btn-container button{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var( --Dark-Blue-Lighter);
+    color: var(--Light-Grey);
+    border: none;
+    
+
+  }
+
+  .rate-btn-container button:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+
+  }
+
+  /* .rate-btn-container button:active{
+    background-color: var(--Orange);
+    color: var(--White);
+
+
+  } */
+
+
+
+
+
+  .submit-btn{
+    background-color: var(--Orange);
+    height: 6vh;
+    border-radius:25px;
+    border-style: none;
+    color: var(--White);
+    font-family: overpass;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+
+  .submit-btn:active{
+    background-color: var(--White);
+    color: var(--Orange);
+
+
+  }
+
+
+
+
+  /* Thank you page */
+  .thank-you-card{
+    color: white;
+    position: absolute;
+    /* display: flex; */
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--Dark-Blue);
+    
+    flex-direction: column;
+    padding: 20px;
+    width: 27vw;
+    height: 55vh;
+    border-radius: 12px;
+    
+  }
+
+  .thank-you-card img{
+    max-width: 50%;
+    height: auto;
+  }
+
+  
+
+
+
+
+  .selected-star{
+    background-color: var( --Dark-Blue-Lighter);
+    color: var(--Orange);
+    font-family: overpass;
+    font-size: 0.8em;
+    text-align: center;
+    width: 15vw;
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+
+  .thanks-greeting{
+    color: var(--Light-Grey);
+    text-align: center;
+    font-family: overpass;
+    font-size: 1rem;
+  }
+
+
+
+@media only screen and (max-width: 375px) {
+  .card{
+    
+    width: 80vw;
+    height: 55vh;
+    border-radius: 12px;
+
+  }
+
+
+  .thank-you-card{
+    
+    width: 80vw;
+    height: 55vh;
+    border-radius: 12px;
+  }
+
+
+  .thank-you-card img{
+    max-width: 50%;
+    height: auto;
+  }
+
+  .selected-star{
+    width: 40vw;
+    font-size:0.7em;
+  }
+
+  .thanks-greeting{
+    font-size: 0.8em;
+    padding-bottom: 22px;
+  }
+
+}
+
