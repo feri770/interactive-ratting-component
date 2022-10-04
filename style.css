@@ -225,3 +225,77 @@
 
 }
 
+
+@media only screen and (max-width: 720px) {
+  .card{
+    
+    width: 80vw;
+    height: 55vh;
+    border-radius: 20px;
+
+  }
+
+  .star-img{
+    background-color: var( --Dark-Blue-Lighter);
+    width:18vw;
+    height: 8vh;
+    border-radius: 50%;
+    
+  }
+
+  .star-img img{
+    width: 7vw;
+
+  }
+
+  h1{
+    font-size: 4rem;
+  }
+
+
+  p{
+    color: var(--Medium-Grey);
+    font-size: 2rem;
+  }
+  
+
+  .rate-btn-container button{
+    width:10vw;
+    height:6vh;
+   
+    
+
+  }
+
+
+
+  .submit-btn{
+    font-size: 2rem;
+  }
+
+
+  .thank-you-card{
+    
+    width: 80vw;
+    height: 55vh;
+    border-radius: 12px;
+  }
+
+
+  .thank-you-card img{
+    max-width: 50vw;
+    height: 10vh;
+  }
+
+  .selected-star{
+    width: 40vw;
+    font-size:2rem;
+  }
+
+  .thanks-greeting{
+    font-size: 2rem;
+    padding-bottom: 76px;
+  }
+
+}
+
